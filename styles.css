@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div.A{
+    background-color: rgb(66, 102, 178); 
+    border: none;
+    height: 100px;  
+}
+
+#S1{
+    position: absolute;
+    padding: 40px;
+    margin-left: 300px;
+    font-size: 60px;
+    color: white;
+}
+
+#S2{
+    margin-left: 1500px;
+    padding-top: 50px; 
+}

@@ -5,7 +5,6 @@
 }
 
 .header{
-    position: absolute;
     display: flex;
     background-color: #3d5b99;
     height: 85px;
@@ -15,9 +14,9 @@
 }
 
 #logo{
-    position: absolute;
-    left: 150px;
-    top: 30px;
+    /* position: absolute; */
+    margin-left: 150px;
+    margin-top: 30px;
     color: white;
     font-size: xxx-large;
     font-weight: bold;
@@ -25,18 +24,13 @@
 }
 
 #mail{
-    position: absolute;
-    right: 35%;
-    top: 15px;
-    line-height: 140%;
+    margin-left: 35%;
+    margin-top: 15px;
     color: white;
 }
 
 #pass{
-    position: absolute;
-    right: 24.5%;
-    top: 14px;
-    line-height: 140%;
+    margin-top: 14px;
     color: white;
 }
 
@@ -44,19 +38,18 @@
     color: white;
     text-decoration: none;
     opacity: 0.5;
-    position: absolute;
-    top: 48px;
+    position: fixed;
+    margin-top: 11px;
 }
 
-#login{
-    position: absolute;
-    right: 21%;
-    top: 37px;
-    background-color: #5b7bc0;
-    height:22px;
-	width:50px;
+#loginbutton{
+    background-color: #4267B2;
+    margin-top: 29px;
+    margin-left: 10px;
+    border: 2px solid #29487d;
     color: white;
-    border: none;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, .25);
 }

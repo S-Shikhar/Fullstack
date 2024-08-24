@@ -1,24 +1,62 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-div.A{
-    background-color: rgb(66, 102, 178); 
-    border: none;
-    height: 100px;  
+.header{
+    position: absolute;
+    display: flex;
+    background-color: #3d5b99;
+    height: 85px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
 }
 
-#S1{
+#logo{
     position: absolute;
-    padding: 40px;
-    margin-left: 300px;
-    font-size: 60px;
+    left: 150px;
+    top: 30px;
+    color: white;
+    font-size: xxx-large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#mail{
+    position: absolute;
+    right: 35%;
+    top: 15px;
+    line-height: 140%;
     color: white;
 }
 
-#S2{
-    margin-left: 1500px;
-    padding-top: 50px; 
+#pass{
+    position: absolute;
+    right: 24.5%;
+    top: 14px;
+    line-height: 140%;
+    color: white;
+}
+
+#fp{
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+    position: absolute;
+    top: 48px;
+}
+
+#login{
+    position: absolute;
+    right: 21%;
+    top: 37px;
+    background-color: #5b7bc0;
+    height:22px;
+	width:50px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .25);
 }

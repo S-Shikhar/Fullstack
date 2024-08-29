@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #EDEFF5;
 }
 
@@ -42,8 +42,7 @@ body{
     color: white;
     text-decoration: none;
     opacity: 0.5;
-    position: fixed;
-    margin-top: 11px;
+    line-height: 35px;
 }
 
 #login_button{
@@ -64,11 +63,17 @@ body{
     background-color: #4f6aa3;
 }
 
-.left{
+.body{
     display: flex;
-    flex-direction: column;
     margin-top: 30px;
     margin-left: 180px;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
     font-size: x-large;
 }
 
@@ -76,12 +81,94 @@ body{
     margin-top: 30px;
 }
 
-#connect_img{
-   
+#img{
+    width: 700px;
 }
 
-.body{
+#right{
     display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: x-large;
+    padding: 20px;
+}
+
+
+#signup{
     margin-top: 30px;
-    margin-left: 180px;
+    margin-left: 80px;
+    font-size: x-large;
+}
+
+#name{
+    display: flex;
+    font-size: x-large;
+}
+
+#fn, #sn{
+    width: 200px;
+    height: 40px;
+}
+
+input::placeholder{
+    font-size: 20px;
+}
+
+#mob{
+    width: 418px;
+    height: 40px;
+    margin-top: 12px;
+}
+
+#pass2{
+    width: 418px;
+    height: 40px;
+    margin-top: 12px;
+}
+
+#bday{
+    width:200px;
+	height:40px;
+	border-radius:5px 5px 5px 5px;
+	background:white;
+	padding:10px;
+	font-size:18px;
+	margin-top:8px;
+	border-width: 1px;
+	border-style:solid;
+	border-color: gray; 
+}
+
+#text2{
+    font-size: 15px;
+    opacity: 0.5;
+    width: 418px;
+}
+
+#signup_button{
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    width:200px;
+    height:50px;
+    background-color: #20b21b;
+    border: 1px solid #999;
+    border-color:#8b9dc3 #2f477a #29447e #1a356e;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+
+#signup_button:hover{
+    background-color: #1a9c16;
+}
+
+#last{
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+#create{
+    font-weight: bold;
+    font-size: 17px;
 }

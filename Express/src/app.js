@@ -1,6 +1,7 @@
 const express = require("express");
 const hbs = require("hbs");
 const path = require("path");
+const dotenv = require("dotenv").config();
 
 const app = express();
 const port = 3200 || process.env.port;

@@ -9,6 +9,7 @@ app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "../templates/views"));
 
 app.listen(port, () => {
-    console.log(`server is runnng on portL: ${port}`);   
+    console.log(`server is runnng on port http://localhost:${port}`);   
+    console.log(`Server started at http://localhost:${port}`);
 });
 

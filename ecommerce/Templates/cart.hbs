@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Your Cart</h1>
+  <div class="row">
+    {{#each cart.products}}
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="card-text">Quantity: {{quantity}}</p>
+            <p class="card-text">Price: ${{product.price}}</p>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <h2 class="text-center mt-4">Total Price: ${{cart.total_price}}</h2>
+  <div class="text-center">
+    <form method="POST" action="/user/cart/checkout">
+      <button class="btn btn-success btn-lg" type="submit">Checkout</button>
+    </form>
+  </div>
+</div>

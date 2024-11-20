@@ -1,0 +1,33 @@
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Available Products</h1>
+  <div class="row">
+    {{#each products}}
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+            <p class="card-text">{{description}}</p>
+            <p class="card-text"><strong>Price: ${{price}}</strong></p>
+            <p class="card-text">Stock: {{stock}}</p>
+            <form method="POST" action="/user/cart/add" class="d-flex">
+              <input
+                type="hidden"
+                name="product_id"
+                value="{{_id}}"
+              />
+              <input
+                type="number"
+                name="quantity"
+                class="form-control me-2"
+                min="1"
+                max="{{stock}}"
+                required
+              />
+              <button class="btn btn-primary" type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

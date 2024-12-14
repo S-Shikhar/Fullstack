@@ -2,8 +2,8 @@ const mongoose = require("mongoose")
 require("dotenv").config()
 
 const newworn = {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true
 }
 
 // Create a database

@@ -45,7 +45,7 @@ app.post("/login", (req, res) => {
     console.log(req.body.email);
     console.log(req.body.pass);
 
-    // Create a new user
+    // Create a new user object and pass the email and password to it from the form 
     const newUser = new User({
         email: req.body.email,
         pass: req.body.pass
@@ -65,4 +65,8 @@ app.post("/login", (req, res) => {
 
 app.get("/about", (req, res) => {
     res.render("about")
+})
+
+app.get("/users", (req, res) => {
+    res.render("users")
 })

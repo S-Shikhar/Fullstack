@@ -1,0 +1,8 @@
+.form{
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    background-color: rgb(137, 156, 212);
+    box-shadow: indigo 0 0 5px rgba(0, 30, 255, 0.2);
+}

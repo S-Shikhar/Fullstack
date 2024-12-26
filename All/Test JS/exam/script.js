@@ -12,3 +12,14 @@ sub.addEventListener("click", e => {
     // window.location.href = "index2.html"
 })
 
+// const subButton = document.querySelector('.sub');
+// const loginDiv = document.querySelector('.login');
+
+// subButton.addEventListener('mouseover', () => {
+//     loginDiv.style.backgroundColor = '#8c3030';
+// });
+
+// subButton.addEventListener('mouseout', () => {
+//     loginDiv.style.backgroundColor = '';
+// });
+

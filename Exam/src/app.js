@@ -22,7 +22,8 @@ hbs.registerPartials(path.join(__dirname, "../templates/partials"))  // Set part
 
 
 // Set up static directory to serve css files from public directory
-app.use("/css", express.static(path.join(__dirname, "../templates/assets/css"))) 
+app.use("/css", express.static(path.join(__dirname, "../templates/assets/css")))
+app.use("/js", express.static(path.join(__dirname, "../templates/assets/js"))) 
 
 
 
